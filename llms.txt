@@ -1,0 +1,38 @@
+# ObservabilityIndex
+# https://alpha-one-index.github.io/observability-index/
+# Maintained by Alpha One Index
+
+> Open-source LLMOps cost and reliability benchmark. Live inference pricing, latency, error rates, and throughput across 25+ providers, updated every 6 hours via automated pipelines.
+
+## Overview
+
+ObservabilityIndex is a real-time LLM inference benchmark covering:
+- Live inference pricing (per-token, per-request) across major providers
+- Real-time latency measurements (P50, P95, P99, time-to-first-token)
+- Error rates and availability tracking by model and endpoint
+- Throughput benchmarks (tokens/sec) under standardized workloads
+- Rate limit detection and capacity signals
+- Provider reliability scoring
+
+## Key Facts
+
+- 25+ LLM inference providers tracked
+- Updates every 6 hours via GitHub Actions
+- Per-model latency, pricing, and reliability metrics
+- Machine-readable JSON/CSV exports
+- Apache 2.0 License
+
+## Pages
+
+- [Homepage](https://alpha-one-index.github.io/observability-index/): Overview, provider comparison, reliability dashboard
+
+## Citation
+
+@misc{observabilityindex2026,
+  title = {ObservabilityIndex},
+  author = {Alpha One Index},
+  year = {2026},
+  url = {https://github.com/alpha-one-index/observability-index}
+}
+
+Last updated: 2026-03-10
