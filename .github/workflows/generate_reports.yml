@@ -1,0 +1,65 @@
+name: Generate Observability Reports
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Every 6 hours
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-reports:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run Unified Scorecard Generator
+        run: python -m pipelines.generators.unified_scorecard_generator
+        continue-on-error: true
+
+      - name: Run Migration Playbook Generator
+        run: python -m pipelines.generators.migration_playbook_generator
+        continue-on-error: true
+
+      - name: Run Regulatory Mapper
+        run: python -m pipelines.generators.regulatory_mapper
+        continue-on-error: true
+
+      - name: Run Cost Anomaly Detector
+        run: python -m pipelines.generators.cost_anomaly_detector
+        continue-on-error: true
+
+      - name: Run Integration Gap Analyzer
+        run: python -m pipelines.generators.integration_gap_analyzer
+        continue-on-error: true
+
+      - name: Run SLA Risk Calculator
+        run: python -m pipelines.generators.sla_risk_calculator
+        continue-on-error: true
+
+      - name: Run Vendor Health Monitor
+        run: python -m pipelines.generators.vendor_health_monitor
+        continue-on-error: true
+
+      - name: Run Executive Briefing Generator
+        run: python -m pipelines.generators.executive_briefing_generator
+        continue-on-error: true
+
+      - name: Commit generated reports
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add exports/
+          git diff --staged --quiet || git commit -m "Auto-generate observability reports [skip ci]"
+          git push
