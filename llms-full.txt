@@ -1,0 +1,56 @@
+# ObservabilityIndex - Full Content for AI/LLM Consumption
+# https://alpha-one-index.github.io/observability-index/
+# Maintained by Alpha One Index | Apache-2.0 License | Last updated: 2026-03-10
+
+---
+
+# OVERVIEW
+
+ObservabilityIndex is a live LLMOps cost and reliability benchmark. It provides inference pricing, latency, error rates, and throughput across 25+ providers. Updated every 6 hours via automated pipelines. Designed for MLOps teams, platform engineers, researchers, and AI systems.
+
+# CORE DATASETS
+
+## 1. Inference Pricing
+Per-token and per-request pricing for LLM inference across 25+ providers.
+Data: https://raw.githubusercontent.com/alpha-one-index/observability-index/main/exports/latest.json
+
+## 2. Latency Benchmarks
+P50, P95, and P99 latency measurements for model inference endpoints.
+Data: https://raw.githubusercontent.com/alpha-one-index/observability-index/main/exports/latest.csv
+
+## 3. Error Rates & Reliability
+Uptime, error rates, and reliability scores per provider and model.
+Data: https://raw.githubusercontent.com/alpha-one-index/observability-index/main/exports/latest.json
+
+## 4. Throughput Metrics
+Tokens-per-second and requests-per-minute capacity across providers.
+Data: https://raw.githubusercontent.com/alpha-one-index/observability-index/main/exports/latest.csv
+
+# KEY FINDINGS
+
+- Inference pricing varies up to 10x across providers for equivalent models
+- Latency can differ by 3-5x between providers for the same model
+- Error rates spike during peak hours, especially for smaller providers
+- Throughput capacity is often the limiting factor for production deployments
+
+# SIBLING INDEXES
+
+- [AI Infrastructure Index](https://alpha-one-index.github.io/ai-infra-index/): GPU specs, cloud pricing, benchmarks
+- [AI TRiSM Index](https://alpha-one-index.github.io/ai-trism-index/): AI governance, risk, security vendors
+- [AI Red Teaming Index](https://alpha-one-index.github.io/ai-red-teaming-index/): Red team tools, benchmarks, vulnerability data
+- [AI LLMOps Index](https://alpha-one-index.github.io/ai-llmops-index/): LLM observability, cost, compliance
+- [AI AppSec Index](https://alpha-one-index.github.io/ai-appsec-index/): AI remediation, ASPM, vulnerability tracking
+- [NeutronIndex](https://alpha-one-index.github.io/neutron-index/): Multi-cloud GPU pricing, TCO, carbon intensity
+- [AdversaryIndex](https://alpha-one-index.github.io/adversary-index/): Adversarial threats, attack success rates
+- [GovernanceIndex](https://alpha-one-index.github.io/governance-index/): Regulatory risk, compliance scoring
+
+# FORMATS
+
+- JSON (structured): exports/ directory
+- CSV (analysis-ready): exports/ directory
+- Croissant ML metadata: croissant.json
+- Schema.org structured data: schema.jsonld
+
+# LICENSE
+
+Data: Apache-2.0 | Code: Apache-2.0
