@@ -1,0 +1,13 @@
+{
+  "vendor": "grafana_labs",
+  "health_score": 77.3,
+  "health_rating": "excellent",
+  "revenue_growth": 35,
+  "employee_trend": "growing",
+  "risk_signal_count": 2,
+  "oss_commitment": "strong",
+  "risk_signals": [
+    "pre_ipo_uncertainty",
+    "enterprise_monetization_challenge"
+  ]
+}

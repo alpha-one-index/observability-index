@@ -1,0 +1,124 @@
+{
+  "provider": "datadog",
+  "total_integrations": 23,
+  "supported_count": 18,
+  "gap_count": 5,
+  "coverage_pct": 78.3,
+  "gaps": [
+    {
+      "category": "cloud_providers",
+      "integration": "oracle_cloud",
+      "alternatives": [
+        "new_relic",
+        "splunk"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "category": "cloud_providers",
+      "integration": "ibm_cloud",
+      "alternatives": [
+        "splunk"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "category": "ci_cd",
+      "integration": "tekton",
+      "alternatives": [
+        "grafana_cloud"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "category": "messaging",
+      "integration": "pulsar",
+      "alternatives": [
+        "grafana_cloud"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "category": "messaging",
+      "integration": "nats",
+      "alternatives": [
+        "grafana_cloud"
+      ],
+      "severity": "moderate"
+    }
+  ],
+  "supported": [
+    {
+      "category": "cloud_providers",
+      "integration": "aws"
+    },
+    {
+      "category": "cloud_providers",
+      "integration": "azure"
+    },
+    {
+      "category": "cloud_providers",
+      "integration": "gcp"
+    },
+    {
+      "category": "container_orchestration",
+      "integration": "kubernetes"
+    },
+    {
+      "category": "container_orchestration",
+      "integration": "openshift"
+    },
+    {
+      "category": "container_orchestration",
+      "integration": "ecs"
+    },
+    {
+      "category": "container_orchestration",
+      "integration": "nomad"
+    },
+    {
+      "category": "databases",
+      "integration": "postgresql"
+    },
+    {
+      "category": "databases",
+      "integration": "mongodb"
+    },
+    {
+      "category": "databases",
+      "integration": "redis"
+    },
+    {
+      "category": "databases",
+      "integration": "cassandra"
+    },
+    {
+      "category": "databases",
+      "integration": "cockroachdb"
+    },
+    {
+      "category": "ci_cd",
+      "integration": "github_actions"
+    },
+    {
+      "category": "ci_cd",
+      "integration": "gitlab_ci"
+    },
+    {
+      "category": "ci_cd",
+      "integration": "jenkins"
+    },
+    {
+      "category": "ci_cd",
+      "integration": "argocd"
+    },
+    {
+      "category": "messaging",
+      "integration": "kafka"
+    },
+    {
+      "category": "messaging",
+      "integration": "rabbitmq"
+    }
+  ]
+}

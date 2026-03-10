@@ -1,0 +1,53 @@
+{
+  "provider": "splunk",
+  "lock_in_score": 68,
+  "total_estimated_days": 35,
+  "phases": [
+    {
+      "phase": 1,
+      "name": "Inventory & Assessment",
+      "actions": [
+        "Catalog all splunk dashboards, alerts, and integrations",
+        "Map proprietary query languages to OpenTelemetry equivalents",
+        "Identify data retention requirements and export windows",
+        "Estimate engineering effort: 160-320 hours"
+      ],
+      "estimated_days": 5
+    },
+    {
+      "phase": 2,
+      "name": "Data Export & Backup",
+      "actions": [
+        "Export historical metrics via: s3, hec",
+        "Convert proprietary dashboards to Grafana JSON format",
+        "Archive alert rules in OpenTelemetry-compatible format",
+        "Validate data integrity with checksum verification"
+      ],
+      "estimated_days": 10
+    },
+    {
+      "phase": 3,
+      "name": "Migration Execution",
+      "actions": [
+        "Deploy OpenTelemetry Collector as parallel ingestion layer",
+        "Configure import adapters: syslog, fluentd",
+        "Run dual-write validation for 7-14 days",
+        "Migrate alert rules and notification channels",
+        "Perform load testing on new observability stack"
+      ],
+      "estimated_days": 10
+    },
+    {
+      "phase": 4,
+      "name": "Cutover & Decommission",
+      "actions": [
+        "Switch production traffic to new observability platform",
+        "Decommission splunk agents and collectors",
+        "Update runbooks and incident response procedures",
+        "Conduct team training on new platform",
+        "Monitor for 30 days before canceling old contracts"
+      ],
+      "estimated_days": 10
+    }
+  ]
+}

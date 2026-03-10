@@ -1,0 +1,12 @@
+{
+  "provider": "elastic",
+  "risk_score": 30.0,
+  "risk_level": "moderate",
+  "uptime_gap_pct": 0.04,
+  "committed_uptime": 99.95,
+  "actual_uptime": 99.91,
+  "incident_frequency": 10,
+  "avg_resolution_min": 42,
+  "max_credit_pct": 100,
+  "annual_downtime_hours": 7.9
+}

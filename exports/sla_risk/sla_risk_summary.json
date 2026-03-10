@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-03-10T14:35:47.444396+00:00",
+  "provider_rankings": [
+    {
+      "provider": "datadog",
+      "risk_score": 63.5,
+      "risk_level": "high",
+      "uptime_gap_pct": 0.05,
+      "committed_uptime": 99.9,
+      "actual_uptime": 99.85,
+      "incident_frequency": 18,
+      "avg_resolution_min": 47,
+      "max_credit_pct": 50,
+      "annual_downtime_hours": 13.1
+    },
+    {
+      "provider": "splunk",
+      "risk_score": 53.0,
+      "risk_level": "high",
+      "uptime_gap_pct": 0.03,
+      "committed_uptime": 99.9,
+      "actual_uptime": 99.87,
+      "incident_frequency": 15,
+      "avg_resolution_min": 55,
+      "max_credit_pct": 50,
+      "annual_downtime_hours": 11.4
+    },
+    {
+      "provider": "elastic",
+      "risk_score": 30.0,
+      "risk_level": "moderate",
+      "uptime_gap_pct": 0.04,
+      "committed_uptime": 99.95,
+      "actual_uptime": 99.91,
+      "incident_frequency": 10,
+      "avg_resolution_min": 42,
+      "max_credit_pct": 100,
+      "annual_downtime_hours": 7.9
+    },
+    {
+      "provider": "new_relic",
+      "risk_score": 26.0,
+      "risk_level": "low",
+      "uptime_gap_pct": -0.02,
+      "committed_uptime": 99.9,
+      "actual_uptime": 99.92,
+      "incident_frequency": 12,
+      "avg_resolution_min": 38,
+      "max_credit_pct": 100,
+      "annual_downtime_hours": 7.0
+    },
+    {
+      "provider": "grafana_cloud",
+      "risk_score": 15.0,
+      "risk_level": "low",
+      "uptime_gap_pct": -0.38,
+      "committed_uptime": 99.5,
+      "actual_uptime": 99.88,
+      "incident_frequency": 8,
+      "avg_resolution_min": 32,
+      "max_credit_pct": 50,
+      "annual_downtime_hours": 10.5
+    }
+  ],
+  "lowest_risk": "grafana_cloud",
+  "highest_risk": "datadog",
+  "avg_risk_score": 37.5
+}

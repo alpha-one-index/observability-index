@@ -1,0 +1,12 @@
+{
+  "provider": "grafana_cloud",
+  "risk_score": 15.0,
+  "risk_level": "low",
+  "uptime_gap_pct": -0.38,
+  "committed_uptime": 99.5,
+  "actual_uptime": 99.88,
+  "incident_frequency": 8,
+  "avg_resolution_min": 32,
+  "max_credit_pct": 50,
+  "annual_downtime_hours": 10.5
+}

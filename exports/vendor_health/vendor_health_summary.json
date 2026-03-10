@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-03-10T14:35:47.490215+00:00",
+  "vendor_rankings": [
+    {
+      "vendor": "grafana_labs",
+      "health_score": 77.3,
+      "health_rating": "excellent",
+      "revenue_growth": 35,
+      "employee_trend": "growing",
+      "risk_signal_count": 2,
+      "oss_commitment": "strong",
+      "risk_signals": [
+        "pre_ipo_uncertainty",
+        "enterprise_monetization_challenge"
+      ]
+    },
+    {
+      "vendor": "datadog",
+      "health_score": 72.0,
+      "health_rating": "good",
+      "revenue_growth": 26,
+      "employee_trend": "growing",
+      "risk_signal_count": 2,
+      "oss_commitment": "moderate",
+      "risk_signals": [
+        "high_valuation_multiple",
+        "competitive_pricing_pressure"
+      ]
+    },
+    {
+      "vendor": "elastic",
+      "health_score": 62.7,
+      "health_rating": "good",
+      "revenue_growth": 18,
+      "employee_trend": "growing",
+      "risk_signal_count": 2,
+      "oss_commitment": "strong",
+      "risk_signals": [
+        "license_model_controversy",
+        "aws_competition"
+      ]
+    },
+    {
+      "vendor": "new_relic",
+      "health_score": 35,
+      "health_rating": "concerning",
+      "revenue_growth": 8,
+      "employee_trend": "shrinking",
+      "risk_signal_count": 3,
+      "oss_commitment": "moderate",
+      "risk_signals": [
+        "private_equity_ownership",
+        "workforce_reduction",
+        "leadership_changes"
+      ]
+    },
+    {
+      "vendor": "splunk",
+      "health_score": 34,
+      "health_rating": "concerning",
+      "revenue_growth": 11,
+      "employee_trend": "shrinking",
+      "risk_signal_count": 3,
+      "oss_commitment": "moderate",
+      "risk_signals": [
+        "cisco_integration_uncertainty",
+        "product_consolidation_risk",
+        "workforce_reduction"
+      ]
+    }
+  ],
+  "healthiest": "grafana_labs",
+  "most_concerning": "splunk"
+}

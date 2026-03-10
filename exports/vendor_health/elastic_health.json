@@ -1,0 +1,13 @@
+{
+  "vendor": "elastic",
+  "health_score": 62.7,
+  "health_rating": "good",
+  "revenue_growth": 18,
+  "employee_trend": "growing",
+  "risk_signal_count": 2,
+  "oss_commitment": "strong",
+  "risk_signals": [
+    "license_model_controversy",
+    "aws_competition"
+  ]
+}

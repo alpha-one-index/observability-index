@@ -1,0 +1,12 @@
+{
+  "provider": "new_relic",
+  "risk_score": 26.0,
+  "risk_level": "low",
+  "uptime_gap_pct": -0.02,
+  "committed_uptime": 99.9,
+  "actual_uptime": 99.92,
+  "incident_frequency": 12,
+  "avg_resolution_min": 38,
+  "max_credit_pct": 100,
+  "annual_downtime_hours": 7.0
+}

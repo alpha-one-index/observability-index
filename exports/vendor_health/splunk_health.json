@@ -1,0 +1,14 @@
+{
+  "vendor": "splunk",
+  "health_score": 34,
+  "health_rating": "concerning",
+  "revenue_growth": 11,
+  "employee_trend": "shrinking",
+  "risk_signal_count": 3,
+  "oss_commitment": "moderate",
+  "risk_signals": [
+    "cisco_integration_uncertainty",
+    "product_consolidation_risk",
+    "workforce_reduction"
+  ]
+}

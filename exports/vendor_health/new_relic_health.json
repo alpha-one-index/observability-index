@@ -1,0 +1,14 @@
+{
+  "vendor": "new_relic",
+  "health_score": 35,
+  "health_rating": "concerning",
+  "revenue_growth": 8,
+  "employee_trend": "shrinking",
+  "risk_signal_count": 3,
+  "oss_commitment": "moderate",
+  "risk_signals": [
+    "private_equity_ownership",
+    "workforce_reduction",
+    "leadership_changes"
+  ]
+}

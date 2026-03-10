@@ -1,0 +1,68 @@
+{
+  "generated": "2026-03-10T14:35:47.205917+00:00",
+  "version": "1.0",
+  "algorithm": "Unified Scorecard Generator v1.0",
+  "weights": {
+    "reliability": 0.3,
+    "cost_drift": 0.2,
+    "compliance": 0.2,
+    "vendor_lockin": 0.15,
+    "alpha_value": 0.15
+  },
+  "grade_scale": [
+    [
+      95,
+      "A+"
+    ],
+    [
+      90,
+      "A"
+    ],
+    [
+      85,
+      "A-"
+    ],
+    [
+      80,
+      "B+"
+    ],
+    [
+      75,
+      "B"
+    ],
+    [
+      70,
+      "B-"
+    ],
+    [
+      65,
+      "C+"
+    ],
+    [
+      60,
+      "C"
+    ],
+    [
+      55,
+      "C-"
+    ],
+    [
+      50,
+      "D+"
+    ],
+    [
+      45,
+      "D"
+    ],
+    [
+      40,
+      "D-"
+    ],
+    [
+      0,
+      "F"
+    ]
+  ],
+  "executive_summary": {},
+  "scorecards": []
+}

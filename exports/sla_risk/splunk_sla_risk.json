@@ -1,0 +1,12 @@
+{
+  "provider": "splunk",
+  "risk_score": 53.0,
+  "risk_level": "high",
+  "uptime_gap_pct": 0.03,
+  "committed_uptime": 99.9,
+  "actual_uptime": 99.87,
+  "incident_frequency": 15,
+  "avg_resolution_min": 55,
+  "max_credit_pct": 50,
+  "annual_downtime_hours": 11.4
+}

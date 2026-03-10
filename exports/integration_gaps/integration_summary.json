@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-03-10T14:35:47.398636+00:00",
+  "provider_coverage": {
+    "datadog": 78.3,
+    "new_relic": 69.6,
+    "grafana_cloud": 78.3,
+    "splunk": 73.9,
+    "elastic": 56.5
+  },
+  "unique_integrations": {
+    "datadog": [],
+    "new_relic": [],
+    "grafana_cloud": [
+      {
+        "category": "ci_cd",
+        "integration": "tekton"
+      },
+      {
+        "category": "messaging",
+        "integration": "pulsar"
+      },
+      {
+        "category": "messaging",
+        "integration": "nats"
+      }
+    ],
+    "splunk": [
+      {
+        "category": "cloud_providers",
+        "integration": "ibm_cloud"
+      }
+    ],
+    "elastic": []
+  },
+  "best_coverage": "datadog",
+  "most_gaps": "elastic"
+}

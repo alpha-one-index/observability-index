@@ -1,0 +1,202 @@
+[
+  {
+    "provider": "datadog",
+    "framework": "EU AI Act",
+    "framework_id": "eu_ai_act",
+    "compliance_score": 40.0,
+    "compliant_count": 2,
+    "gap_count": 3,
+    "total_requirements": 5,
+    "gaps": [
+      {
+        "requirement": "audit_trail",
+        "details": "Complete audit trail for AI decision-making",
+        "remediation": "Implement audit trail capability",
+        "priority": 1
+      },
+      {
+        "requirement": "explainability_metrics",
+        "details": "Metrics tracking AI model explainability",
+        "remediation": "Implement explainability metrics capability",
+        "priority": 1
+      },
+      {
+        "requirement": "human_oversight_logging",
+        "details": "Log all human override actions",
+        "remediation": "Implement human oversight logging capability",
+        "priority": 1
+      }
+    ],
+    "compliant": [
+      {
+        "requirement": "logging_retention",
+        "details": "AI system logs must be retained for minimum 6 months"
+      },
+      {
+        "requirement": "data_sovereignty",
+        "details": "Data must reside within EU boundaries"
+      }
+    ],
+    "penalty_risk_pct": 6.0
+  },
+  {
+    "provider": "datadog",
+    "framework": "NIST Cybersecurity Framework 2.0",
+    "framework_id": "nist_csf",
+    "compliance_score": 0.0,
+    "compliant_count": 0,
+    "gap_count": 5,
+    "total_requirements": 5,
+    "gaps": [
+      {
+        "requirement": "continuous_monitoring",
+        "details": "Real-time security event monitoring",
+        "remediation": "Implement continuous monitoring capability",
+        "priority": 1
+      },
+      {
+        "requirement": "log_integrity",
+        "details": "Tamper-evident logging with cryptographic verification",
+        "remediation": "Implement log integrity capability",
+        "priority": 1
+      },
+      {
+        "requirement": "asset_inventory",
+        "details": "Automated discovery and inventory of monitored assets",
+        "remediation": "Implement asset inventory capability",
+        "priority": 1
+      },
+      {
+        "requirement": "recovery_metrics",
+        "details": "Track RTO/RPO metrics for all critical systems",
+        "remediation": "Implement recovery metrics capability",
+        "priority": 1
+      },
+      {
+        "requirement": "incident_detection",
+        "details": "Detect anomalies within 5 minutes",
+        "remediation": "Implement incident detection capability",
+        "priority": 3
+      }
+    ],
+    "compliant": [],
+    "penalty_risk_pct": 0
+  },
+  {
+    "provider": "datadog",
+    "framework": "SOC 2 Type II",
+    "framework_id": "soc2_type2",
+    "compliance_score": 60.0,
+    "compliant_count": 3,
+    "gap_count": 2,
+    "total_requirements": 5,
+    "gaps": [
+      {
+        "requirement": "change_management",
+        "details": "Track all configuration changes with approval chain",
+        "remediation": "Implement change management capability",
+        "priority": 1
+      },
+      {
+        "requirement": "availability_monitoring",
+        "details": "Monitor and report platform availability",
+        "remediation": "Implement availability monitoring capability",
+        "priority": 3
+      }
+    ],
+    "compliant": [
+      {
+        "requirement": "access_logging",
+        "details": "Log all access to monitoring systems"
+      },
+      {
+        "requirement": "encryption_at_rest",
+        "details": "All stored telemetry data must be encrypted"
+      },
+      {
+        "requirement": "data_retention_policy",
+        "details": "Retain audit logs for minimum 1 year"
+      }
+    ],
+    "penalty_risk_pct": 0
+  },
+  {
+    "provider": "datadog",
+    "framework": "GDPR",
+    "framework_id": "gdpr",
+    "compliance_score": 0.0,
+    "compliant_count": 0,
+    "gap_count": 5,
+    "total_requirements": 5,
+    "gaps": [
+      {
+        "requirement": "data_minimization",
+        "details": "Collect only necessary telemetry data",
+        "remediation": "Implement data minimization capability",
+        "priority": 1
+      },
+      {
+        "requirement": "right_to_erasure",
+        "details": "Support deletion of personal data from logs",
+        "remediation": "Implement right to erasure capability",
+        "priority": 1
+      },
+      {
+        "requirement": "data_processing_records",
+        "details": "Maintain records of all data processing activities",
+        "remediation": "Implement data processing records capability",
+        "priority": 1
+      },
+      {
+        "requirement": "dpia_support",
+        "details": "Support Data Protection Impact Assessments",
+        "remediation": "Implement dpia support capability",
+        "priority": 1
+      },
+      {
+        "requirement": "breach_notification",
+        "details": "Notify authorities within 72 hours of breach",
+        "remediation": "Implement breach notification capability",
+        "priority": 3
+      }
+    ],
+    "compliant": [],
+    "penalty_risk_pct": 4.0
+  },
+  {
+    "provider": "datadog",
+    "framework": "HIPAA",
+    "framework_id": "hipaa",
+    "compliance_score": 80.0,
+    "compliant_count": 4,
+    "gap_count": 1,
+    "total_requirements": 5,
+    "gaps": [
+      {
+        "requirement": "automatic_logoff",
+        "details": "Terminate sessions after inactivity period",
+        "remediation": "Implement automatic logoff capability",
+        "priority": 1
+      }
+    ],
+    "compliant": [
+      {
+        "requirement": "phi_encryption",
+        "details": "Encrypt all Protected Health Information in transit and at rest"
+      },
+      {
+        "requirement": "access_controls",
+        "details": "Role-based access with MFA for PHI data"
+      },
+      {
+        "requirement": "audit_controls",
+        "details": "Record and examine activity in systems containing PHI"
+      },
+      {
+        "requirement": "baa_support",
+        "details": "Business Associate Agreement available"
+      }
+    ],
+    "penalty_risk_pct": 0
+  }
+]

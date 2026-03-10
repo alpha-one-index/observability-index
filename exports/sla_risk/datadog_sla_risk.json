@@ -1,0 +1,12 @@
+{
+  "provider": "datadog",
+  "risk_score": 63.5,
+  "risk_level": "high",
+  "uptime_gap_pct": 0.05,
+  "committed_uptime": 99.9,
+  "actual_uptime": 99.85,
+  "incident_frequency": 18,
+  "avg_resolution_min": 47,
+  "max_credit_pct": 50,
+  "annual_downtime_hours": 13.1
+}

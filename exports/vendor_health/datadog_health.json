@@ -1,0 +1,13 @@
+{
+  "vendor": "datadog",
+  "health_score": 72.0,
+  "health_rating": "good",
+  "revenue_growth": 26,
+  "employee_trend": "growing",
+  "risk_signal_count": 2,
+  "oss_commitment": "moderate",
+  "risk_signals": [
+    "high_valuation_multiple",
+    "competitive_pricing_pressure"
+  ]
+}

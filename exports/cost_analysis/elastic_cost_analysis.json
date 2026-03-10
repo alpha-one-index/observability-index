@@ -1,0 +1,49 @@
+{
+  "provider": "elastic",
+  "pricing_model": {
+    "data_ingestion": {
+      "unit": "GB/month",
+      "tiers": [
+        {
+          "up_to": 100,
+          "price": 0,
+          "note": "included"
+        },
+        {
+          "up_to": Infinity,
+          "price": 0.25
+        }
+      ]
+    },
+    "enterprise_search": {
+      "unit": "deployment/month",
+      "price": 95.0
+    }
+  },
+  "hidden_costs": [
+    "cross_cluster_replication",
+    "ml_nodes",
+    "snapshot_storage"
+  ],
+  "optimizations": [
+    {
+      "category": "hidden_cost_awareness",
+      "action": "Monitor for hidden costs: cross_cluster_replication, ml_nodes, snapshot_storage",
+      "potential_savings_pct": 15,
+      "priority": "high"
+    },
+    {
+      "category": "tier_optimization",
+      "action": "Negotiate committed-use discount for data_ingestion",
+      "potential_savings_pct": 20,
+      "priority": "medium"
+    },
+    {
+      "category": "general",
+      "action": "Implement metric cardinality controls to prevent custom metric explosion",
+      "potential_savings_pct": 25,
+      "priority": "high"
+    }
+  ],
+  "generated_at": "2026-03-10T14:35:47.349356+00:00"
+}

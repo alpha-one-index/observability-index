@@ -1,0 +1,131 @@
+{
+  "provider": "grafana_cloud",
+  "total_integrations": 23,
+  "supported_count": 18,
+  "gap_count": 5,
+  "coverage_pct": 78.3,
+  "gaps": [
+    {
+      "category": "cloud_providers",
+      "integration": "oracle_cloud",
+      "alternatives": [
+        "new_relic",
+        "splunk"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "category": "cloud_providers",
+      "integration": "ibm_cloud",
+      "alternatives": [
+        "splunk"
+      ],
+      "severity": "moderate"
+    },
+    {
+      "category": "container_orchestration",
+      "integration": "openshift",
+      "alternatives": [
+        "datadog",
+        "new_relic",
+        "splunk",
+        "elastic"
+      ],
+      "severity": "critical"
+    },
+    {
+      "category": "container_orchestration",
+      "integration": "ecs",
+      "alternatives": [
+        "datadog",
+        "new_relic",
+        "splunk"
+      ],
+      "severity": "critical"
+    },
+    {
+      "category": "databases",
+      "integration": "cassandra",
+      "alternatives": [
+        "datadog",
+        "new_relic",
+        "splunk"
+      ],
+      "severity": "critical"
+    }
+  ],
+  "supported": [
+    {
+      "category": "cloud_providers",
+      "integration": "aws"
+    },
+    {
+      "category": "cloud_providers",
+      "integration": "azure"
+    },
+    {
+      "category": "cloud_providers",
+      "integration": "gcp"
+    },
+    {
+      "category": "container_orchestration",
+      "integration": "kubernetes"
+    },
+    {
+      "category": "container_orchestration",
+      "integration": "nomad"
+    },
+    {
+      "category": "databases",
+      "integration": "postgresql"
+    },
+    {
+      "category": "databases",
+      "integration": "mongodb"
+    },
+    {
+      "category": "databases",
+      "integration": "redis"
+    },
+    {
+      "category": "databases",
+      "integration": "cockroachdb"
+    },
+    {
+      "category": "ci_cd",
+      "integration": "github_actions"
+    },
+    {
+      "category": "ci_cd",
+      "integration": "gitlab_ci"
+    },
+    {
+      "category": "ci_cd",
+      "integration": "jenkins"
+    },
+    {
+      "category": "ci_cd",
+      "integration": "argocd"
+    },
+    {
+      "category": "ci_cd",
+      "integration": "tekton"
+    },
+    {
+      "category": "messaging",
+      "integration": "kafka"
+    },
+    {
+      "category": "messaging",
+      "integration": "rabbitmq"
+    },
+    {
+      "category": "messaging",
+      "integration": "pulsar"
+    },
+    {
+      "category": "messaging",
+      "integration": "nats"
+    }
+  ]
+}

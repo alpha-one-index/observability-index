@@ -1,0 +1,438 @@
+{
+  "generated_at": "2026-03-10T14:35:47.302253+00:00",
+  "frameworks_assessed": [
+    "eu_ai_act",
+    "nist_csf",
+    "soc2_type2",
+    "gdpr",
+    "hipaa"
+  ],
+  "providers_assessed": [
+    "datadog",
+    "new_relic",
+    "grafana_cloud",
+    "splunk",
+    "elastic"
+  ],
+  "highest_risk_gaps": [
+    {
+      "provider": "datadog",
+      "framework": "EU AI Act",
+      "framework_id": "eu_ai_act",
+      "compliance_score": 40.0,
+      "compliant_count": 2,
+      "gap_count": 3,
+      "total_requirements": 5,
+      "gaps": [
+        {
+          "requirement": "audit_trail",
+          "details": "Complete audit trail for AI decision-making",
+          "remediation": "Implement audit trail capability",
+          "priority": 1
+        },
+        {
+          "requirement": "explainability_metrics",
+          "details": "Metrics tracking AI model explainability",
+          "remediation": "Implement explainability metrics capability",
+          "priority": 1
+        },
+        {
+          "requirement": "human_oversight_logging",
+          "details": "Log all human override actions",
+          "remediation": "Implement human oversight logging capability",
+          "priority": 1
+        }
+      ],
+      "compliant": [
+        {
+          "requirement": "logging_retention",
+          "details": "AI system logs must be retained for minimum 6 months"
+        },
+        {
+          "requirement": "data_sovereignty",
+          "details": "Data must reside within EU boundaries"
+        }
+      ],
+      "penalty_risk_pct": 6.0
+    },
+    {
+      "provider": "datadog",
+      "framework": "GDPR",
+      "framework_id": "gdpr",
+      "compliance_score": 0.0,
+      "compliant_count": 0,
+      "gap_count": 5,
+      "total_requirements": 5,
+      "gaps": [
+        {
+          "requirement": "data_minimization",
+          "details": "Collect only necessary telemetry data",
+          "remediation": "Implement data minimization capability",
+          "priority": 1
+        },
+        {
+          "requirement": "right_to_erasure",
+          "details": "Support deletion of personal data from logs",
+          "remediation": "Implement right to erasure capability",
+          "priority": 1
+        },
+        {
+          "requirement": "data_processing_records",
+          "details": "Maintain records of all data processing activities",
+          "remediation": "Implement data processing records capability",
+          "priority": 1
+        },
+        {
+          "requirement": "dpia_support",
+          "details": "Support Data Protection Impact Assessments",
+          "remediation": "Implement dpia support capability",
+          "priority": 1
+        },
+        {
+          "requirement": "breach_notification",
+          "details": "Notify authorities within 72 hours of breach",
+          "remediation": "Implement breach notification capability",
+          "priority": 3
+        }
+      ],
+      "compliant": [],
+      "penalty_risk_pct": 4.0
+    },
+    {
+      "provider": "new_relic",
+      "framework": "EU AI Act",
+      "framework_id": "eu_ai_act",
+      "compliance_score": 40.0,
+      "compliant_count": 2,
+      "gap_count": 3,
+      "total_requirements": 5,
+      "gaps": [
+        {
+          "requirement": "audit_trail",
+          "details": "Complete audit trail for AI decision-making",
+          "remediation": "Implement audit trail capability",
+          "priority": 1
+        },
+        {
+          "requirement": "explainability_metrics",
+          "details": "Metrics tracking AI model explainability",
+          "remediation": "Implement explainability metrics capability",
+          "priority": 1
+        },
+        {
+          "requirement": "human_oversight_logging",
+          "details": "Log all human override actions",
+          "remediation": "Implement human oversight logging capability",
+          "priority": 1
+        }
+      ],
+      "compliant": [
+        {
+          "requirement": "logging_retention",
+          "details": "AI system logs must be retained for minimum 6 months"
+        },
+        {
+          "requirement": "data_sovereignty",
+          "details": "Data must reside within EU boundaries"
+        }
+      ],
+      "penalty_risk_pct": 6.0
+    },
+    {
+      "provider": "new_relic",
+      "framework": "GDPR",
+      "framework_id": "gdpr",
+      "compliance_score": 20.0,
+      "compliant_count": 1,
+      "gap_count": 4,
+      "total_requirements": 5,
+      "gaps": [
+        {
+          "requirement": "data_minimization",
+          "details": "Collect only necessary telemetry data",
+          "remediation": "Implement data minimization capability",
+          "priority": 1
+        },
+        {
+          "requirement": "data_processing_records",
+          "details": "Maintain records of all data processing activities",
+          "remediation": "Implement data processing records capability",
+          "priority": 1
+        },
+        {
+          "requirement": "dpia_support",
+          "details": "Support Data Protection Impact Assessments",
+          "remediation": "Implement dpia support capability",
+          "priority": 1
+        },
+        {
+          "requirement": "breach_notification",
+          "details": "Notify authorities within 72 hours of breach",
+          "remediation": "Implement breach notification capability",
+          "priority": 3
+        }
+      ],
+      "compliant": [
+        {
+          "requirement": "right_to_erasure",
+          "details": "Support deletion of personal data from logs"
+        }
+      ],
+      "penalty_risk_pct": 4.0
+    },
+    {
+      "provider": "grafana_cloud",
+      "framework": "EU AI Act",
+      "framework_id": "eu_ai_act",
+      "compliance_score": 40.0,
+      "compliant_count": 2,
+      "gap_count": 3,
+      "total_requirements": 5,
+      "gaps": [
+        {
+          "requirement": "audit_trail",
+          "details": "Complete audit trail for AI decision-making",
+          "remediation": "Implement audit trail capability",
+          "priority": 1
+        },
+        {
+          "requirement": "explainability_metrics",
+          "details": "Metrics tracking AI model explainability",
+          "remediation": "Implement explainability metrics capability",
+          "priority": 1
+        },
+        {
+          "requirement": "human_oversight_logging",
+          "details": "Log all human override actions",
+          "remediation": "Implement human oversight logging capability",
+          "priority": 1
+        }
+      ],
+      "compliant": [
+        {
+          "requirement": "logging_retention",
+          "details": "AI system logs must be retained for minimum 6 months"
+        },
+        {
+          "requirement": "data_sovereignty",
+          "details": "Data must reside within EU boundaries"
+        }
+      ],
+      "penalty_risk_pct": 6.0
+    },
+    {
+      "provider": "grafana_cloud",
+      "framework": "GDPR",
+      "framework_id": "gdpr",
+      "compliance_score": 20.0,
+      "compliant_count": 1,
+      "gap_count": 4,
+      "total_requirements": 5,
+      "gaps": [
+        {
+          "requirement": "data_minimization",
+          "details": "Collect only necessary telemetry data",
+          "remediation": "Implement data minimization capability",
+          "priority": 1
+        },
+        {
+          "requirement": "data_processing_records",
+          "details": "Maintain records of all data processing activities",
+          "remediation": "Implement data processing records capability",
+          "priority": 1
+        },
+        {
+          "requirement": "dpia_support",
+          "details": "Support Data Protection Impact Assessments",
+          "remediation": "Implement dpia support capability",
+          "priority": 1
+        },
+        {
+          "requirement": "breach_notification",
+          "details": "Notify authorities within 72 hours of breach",
+          "remediation": "Implement breach notification capability",
+          "priority": 3
+        }
+      ],
+      "compliant": [
+        {
+          "requirement": "right_to_erasure",
+          "details": "Support deletion of personal data from logs"
+        }
+      ],
+      "penalty_risk_pct": 4.0
+    },
+    {
+      "provider": "splunk",
+      "framework": "EU AI Act",
+      "framework_id": "eu_ai_act",
+      "compliance_score": 40.0,
+      "compliant_count": 2,
+      "gap_count": 3,
+      "total_requirements": 5,
+      "gaps": [
+        {
+          "requirement": "audit_trail",
+          "details": "Complete audit trail for AI decision-making",
+          "remediation": "Implement audit trail capability",
+          "priority": 1
+        },
+        {
+          "requirement": "explainability_metrics",
+          "details": "Metrics tracking AI model explainability",
+          "remediation": "Implement explainability metrics capability",
+          "priority": 1
+        },
+        {
+          "requirement": "human_oversight_logging",
+          "details": "Log all human override actions",
+          "remediation": "Implement human oversight logging capability",
+          "priority": 1
+        }
+      ],
+      "compliant": [
+        {
+          "requirement": "logging_retention",
+          "details": "AI system logs must be retained for minimum 6 months"
+        },
+        {
+          "requirement": "data_sovereignty",
+          "details": "Data must reside within EU boundaries"
+        }
+      ],
+      "penalty_risk_pct": 6.0
+    },
+    {
+      "provider": "splunk",
+      "framework": "GDPR",
+      "framework_id": "gdpr",
+      "compliance_score": 0.0,
+      "compliant_count": 0,
+      "gap_count": 5,
+      "total_requirements": 5,
+      "gaps": [
+        {
+          "requirement": "data_minimization",
+          "details": "Collect only necessary telemetry data",
+          "remediation": "Implement data minimization capability",
+          "priority": 1
+        },
+        {
+          "requirement": "right_to_erasure",
+          "details": "Support deletion of personal data from logs",
+          "remediation": "Implement right to erasure capability",
+          "priority": 1
+        },
+        {
+          "requirement": "data_processing_records",
+          "details": "Maintain records of all data processing activities",
+          "remediation": "Implement data processing records capability",
+          "priority": 1
+        },
+        {
+          "requirement": "dpia_support",
+          "details": "Support Data Protection Impact Assessments",
+          "remediation": "Implement dpia support capability",
+          "priority": 1
+        },
+        {
+          "requirement": "breach_notification",
+          "details": "Notify authorities within 72 hours of breach",
+          "remediation": "Implement breach notification capability",
+          "priority": 3
+        }
+      ],
+      "compliant": [],
+      "penalty_risk_pct": 4.0
+    },
+    {
+      "provider": "elastic",
+      "framework": "EU AI Act",
+      "framework_id": "eu_ai_act",
+      "compliance_score": 40.0,
+      "compliant_count": 2,
+      "gap_count": 3,
+      "total_requirements": 5,
+      "gaps": [
+        {
+          "requirement": "audit_trail",
+          "details": "Complete audit trail for AI decision-making",
+          "remediation": "Implement audit trail capability",
+          "priority": 1
+        },
+        {
+          "requirement": "explainability_metrics",
+          "details": "Metrics tracking AI model explainability",
+          "remediation": "Implement explainability metrics capability",
+          "priority": 1
+        },
+        {
+          "requirement": "human_oversight_logging",
+          "details": "Log all human override actions",
+          "remediation": "Implement human oversight logging capability",
+          "priority": 1
+        }
+      ],
+      "compliant": [
+        {
+          "requirement": "logging_retention",
+          "details": "AI system logs must be retained for minimum 6 months"
+        },
+        {
+          "requirement": "data_sovereignty",
+          "details": "Data must reside within EU boundaries"
+        }
+      ],
+      "penalty_risk_pct": 6.0
+    },
+    {
+      "provider": "elastic",
+      "framework": "GDPR",
+      "framework_id": "gdpr",
+      "compliance_score": 20.0,
+      "compliant_count": 1,
+      "gap_count": 4,
+      "total_requirements": 5,
+      "gaps": [
+        {
+          "requirement": "data_minimization",
+          "details": "Collect only necessary telemetry data",
+          "remediation": "Implement data minimization capability",
+          "priority": 1
+        },
+        {
+          "requirement": "data_processing_records",
+          "details": "Maintain records of all data processing activities",
+          "remediation": "Implement data processing records capability",
+          "priority": 1
+        },
+        {
+          "requirement": "dpia_support",
+          "details": "Support Data Protection Impact Assessments",
+          "remediation": "Implement dpia support capability",
+          "priority": 1
+        },
+        {
+          "requirement": "breach_notification",
+          "details": "Notify authorities within 72 hours of breach",
+          "remediation": "Implement breach notification capability",
+          "priority": 3
+        }
+      ],
+      "compliant": [
+        {
+          "requirement": "right_to_erasure",
+          "details": "Support deletion of personal data from logs"
+        }
+      ],
+      "penalty_risk_pct": 4.0
+    }
+  ],
+  "provider_scores": {
+    "datadog": 36.0,
+    "new_relic": 40.0,
+    "grafana_cloud": 36.0,
+    "splunk": 36.0,
+    "elastic": 40.0
+  }
+}

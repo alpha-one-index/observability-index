@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-03-10T14:35:47.253123+00:00",
+  "total_providers": 5,
+  "provider_rankings": [
+    {
+      "provider": "splunk",
+      "lock_in_score": 68,
+      "estimated_days": 35
+    },
+    {
+      "provider": "datadog",
+      "lock_in_score": 67,
+      "estimated_days": 35
+    },
+    {
+      "provider": "new_relic",
+      "lock_in_score": 33,
+      "estimated_days": 30
+    },
+    {
+      "provider": "elastic",
+      "lock_in_score": 30,
+      "estimated_days": 30
+    },
+    {
+      "provider": "grafana_cloud",
+      "lock_in_score": 0,
+      "estimated_days": 30
+    }
+  ],
+  "easiest_migration": "grafana_cloud",
+  "hardest_migration": "splunk"
+}

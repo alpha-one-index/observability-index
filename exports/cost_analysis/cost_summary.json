@@ -1,0 +1,310 @@
+{
+  "generated_at": "2026-03-10T14:35:47.349525+00:00",
+  "reports": [
+    {
+      "provider": "datadog",
+      "pricing_model": {
+        "metric_ingestion": {
+          "unit": "custom_metric/month",
+          "tiers": [
+            {
+              "up_to": 100,
+              "price": 0,
+              "note": "included"
+            },
+            {
+              "up_to": 1000,
+              "price": 0.05
+            },
+            {
+              "up_to": 10000,
+              "price": 0.03
+            },
+            {
+              "up_to": Infinity,
+              "price": 0.015
+            }
+          ]
+        },
+        "log_ingestion": {
+          "unit": "GB/month",
+          "tiers": [
+            {
+              "up_to": 1,
+              "price": 0,
+              "note": "included"
+            },
+            {
+              "up_to": Infinity,
+              "price": 0.1
+            }
+          ]
+        },
+        "apm_hosts": {
+          "unit": "host/month",
+          "price": 31.0
+        },
+        "infra_hosts": {
+          "unit": "host/month",
+          "price": 15.0
+        },
+        "synthetics_api": {
+          "unit": "10k_runs/month",
+          "price": 5.0
+        }
+      },
+      "hidden_costs": [
+        "custom_metric_overages",
+        "log_rehydration",
+        "indexed_spans"
+      ],
+      "optimizations": [
+        {
+          "category": "hidden_cost_awareness",
+          "action": "Monitor for hidden costs: custom_metric_overages, log_rehydration, indexed_spans",
+          "potential_savings_pct": 15,
+          "priority": "high"
+        },
+        {
+          "category": "tier_optimization",
+          "action": "Negotiate committed-use discount for metric_ingestion",
+          "potential_savings_pct": 20,
+          "priority": "medium"
+        },
+        {
+          "category": "tier_optimization",
+          "action": "Negotiate committed-use discount for log_ingestion",
+          "potential_savings_pct": 20,
+          "priority": "medium"
+        },
+        {
+          "category": "general",
+          "action": "Implement metric cardinality controls to prevent custom metric explosion",
+          "potential_savings_pct": 25,
+          "priority": "high"
+        }
+      ],
+      "generated_at": "2026-03-10T14:35:47.348603+00:00"
+    },
+    {
+      "provider": "new_relic",
+      "pricing_model": {
+        "data_ingestion": {
+          "unit": "GB/month",
+          "tiers": [
+            {
+              "up_to": 100,
+              "price": 0,
+              "note": "free tier"
+            },
+            {
+              "up_to": Infinity,
+              "price": 0.3
+            }
+          ]
+        },
+        "full_platform_users": {
+          "unit": "user/month",
+          "price": 549.0
+        },
+        "core_users": {
+          "unit": "user/month",
+          "price": 0
+        }
+      },
+      "hidden_costs": [
+        "full_user_overage",
+        "data_plus_retention",
+        "vulnerability_mgmt"
+      ],
+      "optimizations": [
+        {
+          "category": "hidden_cost_awareness",
+          "action": "Monitor for hidden costs: full_user_overage, data_plus_retention, vulnerability_mgmt",
+          "potential_savings_pct": 15,
+          "priority": "high"
+        },
+        {
+          "category": "tier_optimization",
+          "action": "Negotiate committed-use discount for data_ingestion",
+          "potential_savings_pct": 20,
+          "priority": "medium"
+        },
+        {
+          "category": "general",
+          "action": "Implement metric cardinality controls to prevent custom metric explosion",
+          "potential_savings_pct": 25,
+          "priority": "high"
+        }
+      ],
+      "generated_at": "2026-03-10T14:35:47.348890+00:00"
+    },
+    {
+      "provider": "grafana_cloud",
+      "pricing_model": {
+        "metrics": {
+          "unit": "1k_series/month",
+          "tiers": [
+            {
+              "up_to": 10,
+              "price": 0,
+              "note": "free tier"
+            },
+            {
+              "up_to": Infinity,
+              "price": 8.0
+            }
+          ]
+        },
+        "logs": {
+          "unit": "GB/month",
+          "tiers": [
+            {
+              "up_to": 50,
+              "price": 0,
+              "note": "free tier"
+            },
+            {
+              "up_to": Infinity,
+              "price": 0.5
+            }
+          ]
+        },
+        "traces": {
+          "unit": "GB/month",
+          "price": 0.5
+        }
+      },
+      "hidden_costs": [
+        "alerting_sms",
+        "enterprise_plugins",
+        "sla_addon"
+      ],
+      "optimizations": [
+        {
+          "category": "hidden_cost_awareness",
+          "action": "Monitor for hidden costs: alerting_sms, enterprise_plugins, sla_addon",
+          "potential_savings_pct": 15,
+          "priority": "high"
+        },
+        {
+          "category": "tier_optimization",
+          "action": "Negotiate committed-use discount for metrics",
+          "potential_savings_pct": 20,
+          "priority": "medium"
+        },
+        {
+          "category": "tier_optimization",
+          "action": "Negotiate committed-use discount for logs",
+          "potential_savings_pct": 20,
+          "priority": "medium"
+        },
+        {
+          "category": "general",
+          "action": "Implement metric cardinality controls to prevent custom metric explosion",
+          "potential_savings_pct": 25,
+          "priority": "high"
+        }
+      ],
+      "generated_at": "2026-03-10T14:35:47.349064+00:00"
+    },
+    {
+      "provider": "splunk",
+      "pricing_model": {
+        "data_ingestion": {
+          "unit": "GB/day",
+          "tiers": [
+            {
+              "up_to": 1,
+              "price": 0,
+              "note": "trial"
+            },
+            {
+              "up_to": Infinity,
+              "price": 15.0
+            }
+          ]
+        },
+        "itsi": {
+          "unit": "host/month",
+          "price": 25.0
+        }
+      },
+      "hidden_costs": [
+        "premium_solutions",
+        "cloud_migration_services",
+        "heavy_forwarders"
+      ],
+      "optimizations": [
+        {
+          "category": "hidden_cost_awareness",
+          "action": "Monitor for hidden costs: premium_solutions, cloud_migration_services, heavy_forwarders",
+          "potential_savings_pct": 15,
+          "priority": "high"
+        },
+        {
+          "category": "tier_optimization",
+          "action": "Negotiate committed-use discount for data_ingestion",
+          "potential_savings_pct": 20,
+          "priority": "medium"
+        },
+        {
+          "category": "general",
+          "action": "Implement metric cardinality controls to prevent custom metric explosion",
+          "potential_savings_pct": 25,
+          "priority": "high"
+        }
+      ],
+      "generated_at": "2026-03-10T14:35:47.349221+00:00"
+    },
+    {
+      "provider": "elastic",
+      "pricing_model": {
+        "data_ingestion": {
+          "unit": "GB/month",
+          "tiers": [
+            {
+              "up_to": 100,
+              "price": 0,
+              "note": "included"
+            },
+            {
+              "up_to": Infinity,
+              "price": 0.25
+            }
+          ]
+        },
+        "enterprise_search": {
+          "unit": "deployment/month",
+          "price": 95.0
+        }
+      },
+      "hidden_costs": [
+        "cross_cluster_replication",
+        "ml_nodes",
+        "snapshot_storage"
+      ],
+      "optimizations": [
+        {
+          "category": "hidden_cost_awareness",
+          "action": "Monitor for hidden costs: cross_cluster_replication, ml_nodes, snapshot_storage",
+          "potential_savings_pct": 15,
+          "priority": "high"
+        },
+        {
+          "category": "tier_optimization",
+          "action": "Negotiate committed-use discount for data_ingestion",
+          "potential_savings_pct": 20,
+          "priority": "medium"
+        },
+        {
+          "category": "general",
+          "action": "Implement metric cardinality controls to prevent custom metric explosion",
+          "potential_savings_pct": 25,
+          "priority": "high"
+        }
+      ],
+      "generated_at": "2026-03-10T14:35:47.349356+00:00"
+    }
+  ]
+}
