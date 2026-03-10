@@ -1,0 +1,38 @@
+{
+  "probe_run": "2026-03-10T11:44:50.923005+00:00",
+  "probe_count_per_provider": 3,
+  "providers": [
+    {
+      "provider": "openai",
+      "status": "skipped",
+      "reason": "OPENAI_API_KEY not set"
+    },
+    {
+      "provider": "anthropic",
+      "status": "skipped",
+      "reason": "ANTHROPIC_API_KEY not set"
+    },
+    {
+      "provider": "google",
+      "status": "skipped",
+      "reason": "GOOGLE_API_KEY not set"
+    },
+    {
+      "provider": "mistral",
+      "status": "skipped",
+      "reason": "MISTRAL_API_KEY not set"
+    },
+    {
+      "provider": "cohere",
+      "status": "skipped",
+      "reason": "COHERE_API_KEY not set"
+    }
+  ],
+  "summary": {
+    "total_providers": 5,
+    "healthy": 0,
+    "degraded": 0,
+    "down": 0,
+    "skipped": 5
+  }
+}

@@ -1,0 +1,452 @@
+{
+  "scan_time": "2026-03-10T11:44:53.044274+00:00",
+  "aggregate_health": {
+    "ecosystem_status": "critical",
+    "providers_monitored": 7,
+    "providers_reachable": 5,
+    "total_active_incidents": 3,
+    "max_severity_score": 3,
+    "providers_with_incidents": [
+      "anthropic",
+      "google_ai"
+    ]
+  },
+  "providers": [
+    {
+      "provider": "openai",
+      "timestamp": "2026-03-10T11:44:51.142809+00:00",
+      "reachable": true,
+      "overall_status": "none",
+      "description": "All Systems Operational",
+      "active_incidents": [],
+      "components": [
+        {
+          "name": "Batch",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "File uploads",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Search",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Responses",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Codex",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Chat Completions",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Realtime",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Files",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Login",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Sora",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Image Generation",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Agent",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Login",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Video generation",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Video viewing",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Feed",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Image Generation",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "FedRAMP",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Audio",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Embeddings",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Fine-tuning",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Moderations",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Images",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Conversations",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "GPTs",
+          "status": "operational",
+          "operational": true
+        }
+      ],
+      "total_components": 25,
+      "operational_components": 25
+    },
+    {
+      "provider": "anthropic",
+      "timestamp": "2026-03-10T11:44:51.519876+00:00",
+      "reachable": true,
+      "overall_status": "none",
+      "description": "All Systems Operational",
+      "active_incidents": [
+        {
+          "id": "pqpgkf52p3tg",
+          "name": "Claude Desktop app unresponsive",
+          "status": "monitoring",
+          "impact": "major",
+          "severity_score": 2,
+          "created_at": "2026-03-08T17:57:17.000Z",
+          "updated_at": "2026-03-08T19:43:25.488Z",
+          "shortlink": "https://stspg.io/2h5nyv2gv5b2"
+        }
+      ],
+      "components": [
+        {
+          "name": "claude.ai",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "platform.claude.com (formerly console.anthropic.com)",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Claude API (api.anthropic.com)",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Claude Code",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Claude for Government",
+          "status": "operational",
+          "operational": true
+        }
+      ],
+      "total_components": 5,
+      "operational_components": 5
+    },
+    {
+      "provider": "google_ai",
+      "timestamp": "2026-03-10T11:44:51.571527+00:00",
+      "reachable": true,
+      "overall_status": "incident",
+      "description": "2 active Vertex AI incidents",
+      "active_incidents": [
+        {
+          "id": "15787347096705530732",
+          "name": "We are investigating elevated error rates with multiple products in us-east1",
+          "status": "AVAILABLE",
+          "severity": "medium",
+          "severity_score": 2,
+          "created_at": "2025-07-18T14:42:00+00:00",
+          "updated_at": "2025-07-23T09:26:58+00:00"
+        },
+        {
+          "id": "12995900318995415150",
+          "name": "Multiple GCP products are experiencing Service issues.",
+          "status": "AVAILABLE",
+          "severity": "high",
+          "severity_score": 3,
+          "created_at": "2025-06-12T17:51:00+00:00",
+          "updated_at": "2025-07-19T03:34:44+00:00"
+        }
+      ],
+      "recent_resolved": []
+    },
+    {
+      "provider": "mistral",
+      "timestamp": "2026-03-10T11:44:51.844005+00:00",
+      "reachable": false,
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "overall_status": "unreachable"
+    },
+    {
+      "provider": "cohere",
+      "timestamp": "2026-03-10T11:44:52.086811+00:00",
+      "reachable": true,
+      "overall_status": "none",
+      "description": "All Systems Operational",
+      "active_incidents": [],
+      "components": [
+        {
+          "name": "Website",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "embeddings",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "command-a-vision-07-2025",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "command-a-03-2025",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "command-r-plus-082024",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "command-r7b",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "embed-english-light-v3.0",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "embed-multilingual-v3.0",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "rerank-english-v2.0",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "embed-v4.0",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "command-a-reasoning-08-2025",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "embed-multilingual-light-v3.0",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "rerank-v4.0-fast",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "rerank-v4.0-pro",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "rerank-v3.5",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "rerank-english-v3.0",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "rerank-multilingual-v3.0",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "rerank-multilingual-v2.0",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Coral",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Docs",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "command-r-082024",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "embed-english-v3.0",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Infrastructure",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Playground",
+          "status": "operational",
+          "operational": true
+        }
+      ],
+      "total_components": 24,
+      "operational_components": 24
+    },
+    {
+      "provider": "huggingface",
+      "timestamp": "2026-03-10T11:44:52.747486+00:00",
+      "reachable": false,
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "overall_status": "unreachable"
+    },
+    {
+      "provider": "replicate",
+      "timestamp": "2026-03-10T11:44:53.044217+00:00",
+      "reachable": true,
+      "overall_status": "none",
+      "description": "All Systems Operational",
+      "active_incidents": [],
+      "components": [
+        {
+          "name": "Billing",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Support Tickets",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Streaming API",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "HTTP API",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "CPU Hardware",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Replicate Registry (r8.im)",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "A100 Hardware",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Playground",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Home Page",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "L40S Hardware",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "H100 Hardware",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "T4 Hardware",
+          "status": "operational",
+          "operational": true
+        },
+        {
+          "name": "Official Models",
+          "status": "operational",
+          "operational": true
+        }
+      ],
+      "total_components": 13,
+      "operational_components": 13
+    }
+  ]
+}
