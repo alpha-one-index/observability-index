@@ -1,0 +1,77 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "sc": "https://schema.org/",
+    "dct": "http://purl.org/dc/terms/"
+  },
+  "@type": "sc:Dataset",
+  "name": "ObservabilityIndex",
+  "description": "Live LLMOps cost and reliability benchmark. Inference pricing, latency, error rates, and throughput across 25+ providers, updated every 6 hours. Real-time production monitoring data.",
+  "url": "https://github.com/alpha-one-index/observability-index",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "license": "https://opensource.org/licenses/Apache-2.0",
+  "version": "1.0.0",
+  "dateCreated": "2026-03-10",
+  "dateModified": "2026-03-10",
+  "datePublished": "2026-03-10",
+  "creator": {
+    "@type": "sc:Organization",
+    "name": "Alpha One Index",
+    "url": "https://github.com/alpha-one-index"
+  },
+  "keywords": [
+    "LLM inference",
+    "API pricing",
+    "latency benchmark",
+    "error rates",
+    "throughput",
+    "LLMOps",
+    "model observability",
+    "cost optimization",
+    "provider comparison"
+  ],
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "citation": "Alpha One Index. (2026). ObservabilityIndex. https://github.com/alpha-one-index/observability-index",
+  "rai:dataCollection": "Real-time inference data collected via API probes to 25+ LLM providers. Pricing data scraped from official provider pages. All public sources.",
+  "rai:dataCollectionType": "Automated API Collection",
+  "rai:personalSensitiveInformation": "none",
+  "rai:dataBiases": "Coverage weighted toward major commercial providers. Smaller or regional providers may be underrepresented. Latency measurements depend on probe location.",
+  "rai:dataLimitations": [
+    "Latency measurements are from specific probe locations and may not reflect all regions",
+    "Pricing data may lag behind provider changes",
+    "Error rates are sampled and may not capture all outage events",
+    "Throughput measurements depend on request complexity"
+  ],
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "latest-csv",
+      "name": "ObservabilityIndex Latest CSV",
+      "description": "Full benchmark dataset in CSV format, updated every 6 hours",
+      "contentUrl": "https://raw.githubusercontent.com/alpha-one-index/observability-index/main/exports/latest.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "dynamic"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "latest-json",
+      "name": "ObservabilityIndex Latest JSON",
+      "description": "Full benchmark dataset in JSON format, updated every 6 hours",
+      "contentUrl": "https://raw.githubusercontent.com/alpha-one-index/observability-index/main/exports/latest.json",
+      "encodingFormat": "application/json",
+      "sha256": "dynamic"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "readme-md",
+      "name": "Documentation",
+      "description": "Primary dataset documentation with schema, methodology, and usage instructions",
+      "contentUrl": "https://raw.githubusercontent.com/alpha-one-index/observability-index/main/README.md",
+      "encodingFormat": "text/markdown"
+    }
+  ]
+}
