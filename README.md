@@ -31,6 +31,9 @@ Public pricing pages tell you list price. ObservabilityIndex tells you what actu
 | Azure OpenAI | Regional pricing and availability | Every 6h |
 | Together AI | Open-source model hosting pricing | Every 6h |
 | Groq | Ultra-low-latency inference benchmarks | Every 6h |
+| Live Latency Probes | Real-time TTFT, P95 latency, health status | Every 6h |
+| Status Page Monitor | Outage detection across 7+ AI providers | Every 6h |
+| Rate Limit Tracker | Live rate-limit headers and capacity signals | Every 6h |
 
 ## Schema
 
