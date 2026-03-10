@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: ObservabilityIndex
+message: >-
+  If you use this dataset or reference in your research,
+  please cite it using the metadata from this file.
+type: dataset
+authors:
+  - name: Alpha One Index
+    website: https://github.com/alpha-one-index
+repository-code: https://github.com/alpha-one-index/observability-index
+url: https://github.com/alpha-one-index/observability-index
+abstract: >-
+  Live LLMOps cost and reliability benchmark. Inference
+  pricing, latency, error rates, and throughput across
+  25+ providers, updated every 6 hours.
+keywords:
+  - llm-inference
+  - api-pricing
+  - latency-benchmark
+  - error-rates
+  - throughput
+  - llmops
+  - model-observability
+  - cost-optimization
+  - provider-comparison
+license: Apache-2.0
+version: 1.0.0
+date-released: '2026-03-10'
