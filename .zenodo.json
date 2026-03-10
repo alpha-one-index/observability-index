@@ -1,0 +1,48 @@
+{
+  "title": "ObservabilityIndex: Live LLMOps Cost & Reliability Benchmark",
+  "description": "Live LLMOps cost and reliability benchmark. Inference pricing, latency, error rates, and throughput across 25+ providers, updated every 6 hours.",
+  "upload_type": "dataset",
+  "creators": [
+    {
+      "name": "Alpha One Index",
+      "affiliation": "Independent AI Infrastructure Research"
+    }
+  ],
+  "keywords": [
+    "llm-inference",
+    "api-pricing",
+    "latency-benchmark",
+    "error-rates",
+    "throughput",
+    "llmops",
+    "model-observability",
+    "cost-optimization",
+    "provider-comparison"
+  ],
+  "license": {
+    "id": "Apache-2.0"
+  },
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/alpha-one-index/observability-index",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/alpha-one-index/ai-infra-index",
+      "relation": "isPartOf",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/alpha-one-index/adversary-index",
+      "relation": "isPartOf",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/alpha-one-index/governance-index",
+      "relation": "isPartOf",
+      "scheme": "url"
+    }
+  ]
+}
