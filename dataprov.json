@@ -1,0 +1,145 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dpv": "https://w3id.org/dpv#"
+  },
+  "@type": "Dataset",
+  "@id": "https://github.com/alpha-one-index/observability-index",
+  "name": "ObservabilityIndex",
+  "alternateName": "observability-index",
+  "description": "Live LLMOps cost and reliability benchmark. Inference pricing, latency, error rates, and throughput across 25+ providers, updated every 6 hours.",
+  "version": "1.0.0",
+  "dateCreated": "2026-03-10",
+  "dateModified": "2026-03-10",
+  "datePublished": "2026-03-10",
+  "license": "https://opensource.org/licenses/Apache-2.0",
+  "url": "https://github.com/alpha-one-index/observability-index",
+  "sameAs": "https://alpha-one-index.github.io/observability-index/",
+  "identifier": "alpha-one-index/observability-index",
+  "creator": {
+    "@type": "Organization",
+    "name": "Alpha One Index",
+    "url": "https://github.com/alpha-one-index",
+    "email": "alpha.one.hq@proton.me"
+  },
+  "maintainer": {
+    "@type": "Organization",
+    "name": "Alpha One Index",
+    "url": "https://github.com/alpha-one-index"
+  },
+  "keywords": [
+    "LLM inference",
+    "inference pricing",
+    "latency benchmarks",
+    "error rates",
+    "throughput",
+    "LLMOps",
+    "observability",
+    "model serving",
+    "AI reliability"
+  ],
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Machine learning operations",
+      "sameAs": "https://www.wikidata.org/wiki/Q107434811"
+    },
+    {
+      "@type": "Thing",
+      "name": "Large language model",
+      "sameAs": "https://www.wikidata.org/wiki/Q115215956"
+    },
+    {
+      "@type": "Thing",
+      "name": "Observability",
+      "sameAs": "https://www.wikidata.org/wiki/Q1306787"
+    }
+  ],
+  "temporalCoverage": "2026/2026",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Global"
+  },
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "GitHub",
+    "url": "https://github.com"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "ObservabilityIndex Latest JSON",
+      "contentUrl": "https://raw.githubusercontent.com/alpha-one-index/observability-index/main/exports/latest.json",
+      "encodingFormat": "application/json",
+      "description": "Full LLMOps benchmark dataset in JSON format, updated every 6 hours"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "ObservabilityIndex Latest CSV",
+      "contentUrl": "https://raw.githubusercontent.com/alpha-one-index/observability-index/main/exports/latest.csv",
+      "encodingFormat": "text/csv",
+      "description": "Full LLMOps benchmark dataset in CSV format, updated every 6 hours"
+    }
+  ],
+  "provenance": {
+    "@type": "prov:Entity",
+    "prov:wasGeneratedBy": {
+      "@type": "prov:Activity",
+      "name": "ObservabilityIndex Data Collection",
+      "description": "Automated collection of LLM inference metrics from provider APIs and endpoint testing",
+      "prov:startedAtTime": "2026-03-10",
+      "prov:used": [
+        {
+          "@type": "prov:Entity",
+          "name": "LLM Provider APIs",
+          "description": "Direct inference pricing and metrics from 25+ LLM providers",
+          "collectionMethod": "automated",
+          "updateFrequency": "every_6_hours",
+          "isFirstParty": true
+        },
+        {
+          "@type": "prov:Entity",
+          "name": "Endpoint Latency Testing",
+          "description": "Active latency and throughput measurements via synthetic requests",
+          "collectionMethod": "automated",
+          "updateFrequency": "every_6_hours",
+          "isFirstParty": true
+        }
+      ]
+    }
+  },
+  "qualityControl": {
+    "automatedValidation": {
+      "checks": [
+        "JSON schema validation",
+        "Latency anomaly detection",
+        "Data freshness monitoring",
+        "Cross-provider consistency checks"
+      ],
+      "frequency": "on_commit_and_6_hourly"
+    }
+  },
+  "knownLimitations": [
+    "Latency measurements depend on test location and network conditions",
+    "Error rates are sampled and may not capture all transient failures",
+    "Pricing may lag behind provider changes by up to 6 hours",
+    "Some providers have limited API access for metrics collection"
+  ],
+  "ethicsAndResponsibleUse": {
+    "personalData": "none",
+    "biasConsiderations": "Coverage weighted toward major LLM providers. Smaller or self-hosted providers may be underrepresented.",
+    "intendedBeneficiaries": "MLOps teams, platform engineers, researchers, AI systems needing inference cost and reliability data"
+  },
+  "citation": {
+    "@type": "CreativeWork",
+    "name": "ObservabilityIndex",
+    "author": "Alpha One Index",
+    "datePublished": "2026",
+    "url": "https://github.com/alpha-one-index/observability-index"
+  }
+}
