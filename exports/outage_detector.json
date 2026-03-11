@@ -1,24 +1,55 @@
 {
-  "scan_time": "2026-03-10T11:44:53.044274+00:00",
+  "scan_time": "2026-03-11T05:03:24.608393+00:00",
   "aggregate_health": {
     "ecosystem_status": "critical",
     "providers_monitored": 7,
     "providers_reachable": 5,
-    "total_active_incidents": 3,
+    "total_active_incidents": 5,
     "max_severity_score": 3,
     "providers_with_incidents": [
-      "anthropic",
+      "openai",
       "google_ai"
     ]
   },
   "providers": [
     {
       "provider": "openai",
-      "timestamp": "2026-03-10T11:44:51.142809+00:00",
+      "timestamp": "2026-03-11T05:03:21.994167+00:00",
       "reachable": true,
-      "overall_status": "none",
-      "description": "All Systems Operational",
-      "active_incidents": [],
+      "overall_status": "minor",
+      "description": "Partial System Degradation",
+      "active_incidents": [
+        {
+          "id": "01KK9JA8JKQKDW1W24T09NHBYH",
+          "name": "Codex unresponsive",
+          "status": "identified",
+          "impact": "minor",
+          "severity_score": 1,
+          "created_at": "2026-03-09T15:09:12Z",
+          "updated_at": "2026-03-11T02:50:29Z",
+          "shortlink": null
+        },
+        {
+          "id": "01KKD07DNHFKAWK5JCAMAASYGZ",
+          "name": "Increased errors with ChatGPT file downloads",
+          "status": "identified",
+          "impact": "none",
+          "severity_score": 0,
+          "created_at": "2026-03-10T23:10:02Z",
+          "updated_at": "2026-03-10T23:10:02Z",
+          "shortlink": null
+        },
+        {
+          "id": "01KKCT34VDK552CSMP286DS9HE",
+          "name": "Increased errors on ChatGPT File Uploads",
+          "status": "monitoring",
+          "impact": "minor",
+          "severity_score": 1,
+          "created_at": "2026-03-10T21:22:50Z",
+          "updated_at": "2026-03-10T21:52:11Z",
+          "shortlink": null
+        }
+      ],
       "components": [
         {
           "name": "Batch",
@@ -27,8 +58,8 @@
         },
         {
           "name": "File uploads",
-          "status": "operational",
-          "operational": true
+          "status": "degraded_performance",
+          "operational": false
         },
         {
           "name": "Search",
@@ -42,8 +73,8 @@
         },
         {
           "name": "Codex",
-          "status": "operational",
-          "operational": true
+          "status": "degraded_performance",
+          "operational": false
         },
         {
           "name": "Chat Completions",
@@ -147,26 +178,15 @@
         }
       ],
       "total_components": 25,
-      "operational_components": 25
+      "operational_components": 23
     },
     {
       "provider": "anthropic",
-      "timestamp": "2026-03-10T11:44:51.519876+00:00",
+      "timestamp": "2026-03-11T05:03:22.447183+00:00",
       "reachable": true,
       "overall_status": "none",
       "description": "All Systems Operational",
-      "active_incidents": [
-        {
-          "id": "pqpgkf52p3tg",
-          "name": "Claude Desktop app unresponsive",
-          "status": "monitoring",
-          "impact": "major",
-          "severity_score": 2,
-          "created_at": "2026-03-08T17:57:17.000Z",
-          "updated_at": "2026-03-08T19:43:25.488Z",
-          "shortlink": "https://stspg.io/2h5nyv2gv5b2"
-        }
-      ],
+      "active_incidents": [],
       "components": [
         {
           "name": "claude.ai",
@@ -199,7 +219,7 @@
     },
     {
       "provider": "google_ai",
-      "timestamp": "2026-03-10T11:44:51.571527+00:00",
+      "timestamp": "2026-03-11T05:03:22.555813+00:00",
       "reachable": true,
       "overall_status": "incident",
       "description": "2 active Vertex AI incidents",
@@ -227,14 +247,14 @@
     },
     {
       "provider": "mistral",
-      "timestamp": "2026-03-10T11:44:51.844005+00:00",
+      "timestamp": "2026-03-11T05:03:23.004296+00:00",
       "reachable": false,
       "error": "Expecting value: line 1 column 1 (char 0)",
       "overall_status": "unreachable"
     },
     {
       "provider": "cohere",
-      "timestamp": "2026-03-10T11:44:52.086811+00:00",
+      "timestamp": "2026-03-11T05:03:23.374936+00:00",
       "reachable": true,
       "overall_status": "none",
       "description": "All Systems Operational",
@@ -366,14 +386,14 @@
     },
     {
       "provider": "huggingface",
-      "timestamp": "2026-03-10T11:44:52.747486+00:00",
+      "timestamp": "2026-03-11T05:03:24.275946+00:00",
       "reachable": false,
       "error": "Expecting value: line 1 column 1 (char 0)",
       "overall_status": "unreachable"
     },
     {
       "provider": "replicate",
-      "timestamp": "2026-03-10T11:44:53.044217+00:00",
+      "timestamp": "2026-03-11T05:03:24.608332+00:00",
       "reachable": true,
       "overall_status": "none",
       "description": "All Systems Operational",
