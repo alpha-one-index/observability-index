@@ -1,23 +1,36 @@
 {
-  "scan_time": "2026-03-13T05:06:09.651890+00:00",
+  "scan_time": "2026-03-13T19:47:47.355090+00:00",
   "aggregate_health": {
     "ecosystem_status": "critical",
     "providers_monitored": 7,
     "providers_reachable": 5,
-    "total_active_incidents": 2,
+    "total_active_incidents": 4,
     "max_severity_score": 3,
     "providers_with_incidents": [
+      "openai",
+      "anthropic",
       "google_ai"
     ]
   },
   "providers": [
     {
       "provider": "openai",
-      "timestamp": "2026-03-13T05:06:07.395834+00:00",
+      "timestamp": "2026-03-13T19:47:44.932310+00:00",
       "reachable": true,
-      "overall_status": "none",
-      "description": "All Systems Operational",
-      "active_incidents": [],
+      "overall_status": "minor",
+      "description": "Partial System Degradation",
+      "active_incidents": [
+        {
+          "id": "01KKMB9HWS1B9452FT6BV6KDD6",
+          "name": "Responses API errors when using background mode",
+          "status": "investigating",
+          "impact": "minor",
+          "severity_score": 1,
+          "created_at": "2026-03-13T19:38:07Z",
+          "updated_at": "2026-03-13T19:38:07Z",
+          "shortlink": null
+        }
+      ],
       "components": [
         {
           "name": "Login",
@@ -41,8 +54,8 @@
         },
         {
           "name": "Responses",
-          "status": "operational",
-          "operational": true
+          "status": "degraded_performance",
+          "operational": false
         },
         {
           "name": "Codex",
@@ -146,20 +159,31 @@
         }
       ],
       "total_components": 25,
-      "operational_components": 25
+      "operational_components": 24
     },
     {
       "provider": "anthropic",
-      "timestamp": "2026-03-13T05:06:07.697230+00:00",
+      "timestamp": "2026-03-13T19:47:45.299503+00:00",
       "reachable": true,
-      "overall_status": "none",
-      "description": "All Systems Operational",
-      "active_incidents": [],
+      "overall_status": "minor",
+      "description": "Minor Service Outage",
+      "active_incidents": [
+        {
+          "id": "q58b2gkv64pw",
+          "name": "Elevated errors on Claude Opus 4.6 and Sonnet 4.6",
+          "status": "investigating",
+          "impact": "major",
+          "severity_score": 2,
+          "created_at": "2026-03-13T18:37:32.222Z",
+          "updated_at": "2026-03-13T19:18:42.045Z",
+          "shortlink": "https://stspg.io/ns5813nph8zs"
+        }
+      ],
       "components": [
         {
           "name": "claude.ai",
-          "status": "operational",
-          "operational": true
+          "status": "partial_outage",
+          "operational": false
         },
         {
           "name": "platform.claude.com (formerly console.anthropic.com)",
@@ -168,13 +192,13 @@
         },
         {
           "name": "Claude API (api.anthropic.com)",
-          "status": "operational",
-          "operational": true
+          "status": "partial_outage",
+          "operational": false
         },
         {
           "name": "Claude Code",
-          "status": "operational",
-          "operational": true
+          "status": "partial_outage",
+          "operational": false
         },
         {
           "name": "Claude for Government",
@@ -183,11 +207,11 @@
         }
       ],
       "total_components": 5,
-      "operational_components": 5
+      "operational_components": 2
     },
     {
       "provider": "google_ai",
-      "timestamp": "2026-03-13T05:06:07.784582+00:00",
+      "timestamp": "2026-03-13T19:47:45.402083+00:00",
       "reachable": true,
       "overall_status": "incident",
       "description": "2 active Vertex AI incidents",
@@ -215,14 +239,14 @@
     },
     {
       "provider": "mistral",
-      "timestamp": "2026-03-13T05:06:08.134791+00:00",
+      "timestamp": "2026-03-13T19:47:45.795985+00:00",
       "reachable": false,
       "error": "Expecting value: line 1 column 1 (char 0)",
       "overall_status": "unreachable"
     },
     {
       "provider": "cohere",
-      "timestamp": "2026-03-13T05:06:08.440518+00:00",
+      "timestamp": "2026-03-13T19:47:46.101575+00:00",
       "reachable": true,
       "overall_status": "none",
       "description": "All Systems Operational",
@@ -354,14 +378,14 @@
     },
     {
       "provider": "huggingface",
-      "timestamp": "2026-03-13T05:06:09.355335+00:00",
+      "timestamp": "2026-03-13T19:47:46.980472+00:00",
       "reachable": false,
       "error": "Expecting value: line 1 column 1 (char 0)",
       "overall_status": "unreachable"
     },
     {
       "provider": "replicate",
-      "timestamp": "2026-03-13T05:06:09.651839+00:00",
+      "timestamp": "2026-03-13T19:47:47.355032+00:00",
       "reachable": true,
       "overall_status": "none",
       "description": "All Systems Operational",
