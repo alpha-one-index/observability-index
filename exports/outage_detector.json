@@ -1,5 +1,5 @@
 {
-  "scan_time": "2026-03-14T13:57:30.178833+00:00",
+  "scan_time": "2026-03-14T19:17:26.955310+00:00",
   "aggregate_health": {
     "ecosystem_status": "critical",
     "providers_monitored": 7,
@@ -13,7 +13,7 @@
   "providers": [
     {
       "provider": "openai",
-      "timestamp": "2026-03-14T13:57:27.671885+00:00",
+      "timestamp": "2026-03-14T19:17:23.470810+00:00",
       "reachable": true,
       "overall_status": "none",
       "description": "All Systems Operational",
@@ -150,7 +150,7 @@
     },
     {
       "provider": "anthropic",
-      "timestamp": "2026-03-14T13:57:27.953017+00:00",
+      "timestamp": "2026-03-14T19:17:23.937205+00:00",
       "reachable": true,
       "overall_status": "none",
       "description": "All Systems Operational",
@@ -187,7 +187,7 @@
     },
     {
       "provider": "google_ai",
-      "timestamp": "2026-03-14T13:57:28.049553+00:00",
+      "timestamp": "2026-03-14T19:17:24.232400+00:00",
       "reachable": true,
       "overall_status": "incident",
       "description": "2 active Vertex AI incidents",
@@ -215,14 +215,14 @@
     },
     {
       "provider": "mistral",
-      "timestamp": "2026-03-14T13:57:28.393244+00:00",
+      "timestamp": "2026-03-14T19:17:24.772528+00:00",
       "reachable": false,
       "error": "Expecting value: line 1 column 1 (char 0)",
       "overall_status": "unreachable"
     },
     {
       "provider": "cohere",
-      "timestamp": "2026-03-14T13:57:28.662822+00:00",
+      "timestamp": "2026-03-14T19:17:25.222826+00:00",
       "reachable": true,
       "overall_status": "none",
       "description": "All Systems Operational",
@@ -354,14 +354,14 @@
     },
     {
       "provider": "huggingface",
-      "timestamp": "2026-03-14T13:57:29.723811+00:00",
+      "timestamp": "2026-03-14T19:17:26.372673+00:00",
       "reachable": false,
       "error": "Expecting value: line 1 column 1 (char 0)",
       "overall_status": "unreachable"
     },
     {
       "provider": "replicate",
-      "timestamp": "2026-03-14T13:57:30.178781+00:00",
+      "timestamp": "2026-03-14T19:17:26.955255+00:00",
       "reachable": true,
       "overall_status": "none",
       "description": "All Systems Operational",
